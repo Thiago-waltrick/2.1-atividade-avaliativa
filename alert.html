@@ -7,8 +7,7 @@
 </head>
 <body>
     <h1>Digite os dados da sua Carteira de Trabalho</h1>
-
-    <!-- Campos de entrada para o usuário -->
+   
     <label for="nome">Nome do Trabalhador:</label>
     <input type="text" id="nome" placeholder="Digite seu nome"><br><br>
 
@@ -27,18 +26,17 @@
     <button onclick="mostrarCarteira()">Exibir Dados</button>
 
     <script>
-        // Função para capturar os dados e mostrar com alert
+        
         function mostrarCarteira() {
-            // Captura os valores digitados nos campos
+           
             var nome = document.getElementById("nome").value;
             var anosTrabalhados = document.getElementById("anosTrabalhados").value;
             var salario = document.getElementById("salario").value;
             var ativo = document.getElementById("ativo").value;
-
-            // Exibe as informações da "carteira de trabalho" com alert
+ 
             alert("Nome do Trabalhador: " + nome);
             alert("Anos Trabalhados: " + anosTrabalhados);
-            alert("Salário: R$ " + parseFloat(salario).toFixed(2));  // Formata o salário para 2 casas decimais
+            alert("Salário: R$ " + parseFloat(salario).toFixed(2));  
             alert("Está Ativo: " + (ativo === "true" ? "Sim" : "Não"));
         }
     </script>
